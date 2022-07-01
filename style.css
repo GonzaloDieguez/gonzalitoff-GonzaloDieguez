@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    color: #105705;
+    background-color: gray;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+h1{
+    font-family: 'Noto Sans Mono', monospace;
+    color: #105705;
+}
+.formularioTitulo{
+    color: #105705;
+    background-color: grey;
+    text-align: center;    
+    position: sticky;
+    top: 0;
+}
+
+h2 {
+    background-color: grey;
+    color: #105705;
+    font-family: 'Noto Sans Mono', monospace;
+}
+h3 {
+    color: #105705;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.encabezado {
+    position: sticky;
+    color: #105705;
+    background-color: #000000;
+    font-weight: bold;
+}
+.menu{
+        display: flex;
+        justify-content: center;
+
+}
+.encabezado__lista{
+    display: flex;
+    align-items: stretch;
+
+}
+.encabezado__lista__item {
+    color: #105705;
+    padding: 10px 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 15px; 
+}
+
+.formulario{
+    position: sticky;
+    color: #105705;
+    top: 0;
+    width: 500px;
+    margin: 0 auto;
+    background-color: gray;
+    border-radius: 5px;
+}
+.encabezado__cc {
+    color: #105705;
+    top: 0;
+    border-radius: 5px;
+    border: #000000;
+    font-weight: bold;
+    margin: 10px;
+    display: flex;
+}
+.encabezado__cc__item {
+    background-color: gray;
+    color: #105705;
+    width: max-content;
+    padding: 5px 5px;
+    display: inline-block;
+    margin: 50px;
+    height: auto;
+}
+.boton a{
+    text-decoration: none;
+    color: aqua;
+    font-weight: 500;
+    font-size: 20px;
+}
+.boton{
+    background-color: #365a13;
+    width: fit-content;
+    border-radius: 6px ;
+    padding: 20px;
+    margin: 30px;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+}
+
+#ultimoParrafo{
+    color: #F21B3F;
+    font-family: 'Noto Sans Mono', monospace;
+    text-align: right;
+    width: 50%;
+    border: solid 1px black;
+    height: 100px;
+    overflow: hidden
+}
+.pie{
+    background-color: rgb(75, 72, 72);
+    padding: 5px 50px;
+    text-align: center;  
+}
+
+.redes{
+    background-color: rgb(75, 72, 72);
+    display: inline-block;
+}
+.social-media{
+    width: 50px;
+}
+.ulPrueba {
+    text-decoration: none;
+    display: flex;
+}
+li{
+    color: wheat;
+    background-color: black;
+}
+.contenedor {
+    width: 70%;
+    height: 300px;
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.contenedor__imagen {
+    width: 70%;
+    height: 300px;
+    background-color: gray;
+    border: solid 1px tomato;
+}
+.contenedor__imagen2 {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border: solid 1px tomato;
+}
+.bodyContacto{
+    background-color: gray;
+}
+iframe{ 
+    width: 600px;
+    height: 300px;
+
+}
+@media screen and (max-width: 768px){
+    .bodyContacto{
+        background-color: gray;
+    }
+}
+@media screen and (max-width: 600px){
+    iframe{
+        width: 300px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 320px){
+    .bodyContacto{
+        background-color: gray;
+    }
+    .ulPrueba {
+        flex-direction: column;
+        height: 300px;
+    }
+    .contenedor__imagen{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* CLASE4 */
+.grilla__item{
+    background-color: aquamarine;
+    border: solid 1px rgb(47, 95, 79);
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+    grid-auto-rows: minmax(80px, auto);
+    gap: 20px;
+    grid-auto-flow: dense;
+    
+    /* grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
+    grid-template-rows: repeat(4,150px);
+    height: 100vh;
+    justify-content: center;
+    align-content: center; */
+
+}
+img{
+
+    object-fit: contain;
+
+}
+
+@media screen and (min-width: 375px){
+    .wide{
+        grid-column: span 2;
+    
+    }
+    .tall{
+        grid-row: span 2;
+    
+    }
+}
+
+
+/* .grillaVideos{
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 10px 30px;
+    padding: 20px;
+    height: 100vh;
+    justify-content: center;
+    align-content: space-between;
+} */
+
