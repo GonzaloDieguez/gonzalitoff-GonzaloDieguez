@@ -4,25 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <title>GonzalitoFF</title>
     <link rel="shortcut icon" href="../imagenes/gonzalitoff.png" />
 </head>
 <body class="bodyContacto">
   <header class="encabezado">
-    <a href="../index.html">
-      <img src="../Imagenes/gonzalitoff.png" alt="Logo" class="logotipo">
-    </a>
-    <nav class="menu">
-      <ul class="encabezado__lista">
-        <li class="encabezado__lista__item"><a  href="../index.html">Home</a></li>
-        <li class="encabezado__lista__item"><a  href="./creadores.html">Creadores de Contenido</a></li>
-        <li class="encabezado__lista__item"><a  href="./esports.html">Esports</a></li>
-        <li class="encabezado__lista__item"><a  href="./clips.html">Clips</a></li>
-        <li class="encabezado__lista__item"><a  href="./merchandise.html">Tienda</a></li>
-        <li class="encabezado__lista__item"><a  href="#">Contactanos</a></li>
-        <li class="encabezado__lista__item"><a  href="./about-us.html">Quienes somos</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../Imagenes/gonzalitoff.png" alt="logo" class="logotipo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./creadores.html">Creadores de Contenido</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./esports.html">Esports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./clips.html">Clips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./merchandise.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Contactanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about-us.html">Quienes somos</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
     </nav>
 	</header>
   <main>
@@ -30,58 +54,115 @@
     <section>
       <form class="formulario">
         <h2 class="formularioTitulo">Dejanos tus comentarios!</h2>
-        <div>
-          <label for="name">Nombre</label>
-          <input type="text" name="nombre" id="name">
-          <label for="lastname">Apellido</label>
-          <input type="text" name="apellido" id="lastname">
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Mail</label>
+          <div class="col-sm-10">
+            <input type="mail" class="form-control" id="inputPassword">
+          </div>
         </div>
-        <div>
-          <label>Usuario</label>
-          <input type="text" name="user" />
-          <label>Contraseña</label>
-          <input type="password" name="password" />
         </div>
-        <div>
-          <input type="radio" id="sex" name="sex" value="men" />
-          <label for="sex">Hombre</label>
-          <input type="radio" id="sex" name="sex" value="woman" />
-          <label for="sex">Mujer</label>
-          <input type="radio" id="sex" name="sex" value="men" />
-          <label for="sex">Otro</label>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Nombre</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name">
+          </div>
         </div>
-        <div>
-          <label for="email">Correo Electronico</label> 
-          <input type="email" id="email" name="email" required>
-        </div> 
-        <div>
-          <label for="terms">Acepta Terminos y Condiciones</label>
-          <input type="checkbox" name="accept" id=terms value="1" />  
-        </div>     
-        <input type="submit" value="submit form" />
-        <input type="reset" value="reset form" />
-        <input type="button" value="button" />
-        </form>        
-     <h3>ALGO 1</h2>
-     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam voluptatibus quas ea, accusamus eveniet itaque dolore illum obcaecati debitis quasi recusandae voluptates provident repellat dolor quidem hic numquam vel saepe.
-     </p>
-     <p>Maiores iste mollitia quasi voluptate temporibus ullam molestias ipsa, quam neque qui placeat ea quo eum? Non ipsa fugiat reiciendis praesentium nihil facilis distinctio, exercitationem inventore iure dignissimos odit sunt.
-     </p>     
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Apellido</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="lastname">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Usuario</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="user">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword">
+          </div>
+        </div>
+        <div class="mx-auto" style="width: 200px;">
+          <div>
+            <input type="radio" id="sex" name="sex" value="men" />
+            <label for="sex">Hombre</label>
+            <input type="radio" id="sex" name="sex" value="woman" />
+            <label for="sex">Mujer</label>
+            <input type="radio" id="sex" name="sex" value="men" />
+            <label for="sex">Otro</label>
+          </div>
+          <div>
+            <label for="terms">Acepta Terminos y Condiciones</label>
+            <input type="checkbox" name="accept" id=terms value="1" />  
+          </div>    
+        </div>   
+          <input type="submit" value="submit form" />
+          <input type="reset" value="reset form" />
+          <input type="button" value="button" />
+          </form>      
+ 
+     <h3>Quines somos?</h2>
+     <p>GFF somos un equipo de Esports fundado el 7 de Febrero del 2022 dado a que su fundador, Gonzalo Dieguez jugaba constantemente al Lol, entonces decidio, junto a sus amigos mas cercanos, hacer un equipo competitivo. Comenzaron a buscar a buenos jugadores que podrian sumarse al equipo, asi Agustin Rodriguez y Juan Manuel Berdasco se sumaron al equipo.</p>
     </section>
     <section>
+      <h4>Nuestro HeadCuarters</h4>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26287.335915027772!2d-58.476939849999994!3d-34.5556571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6c049b27a89%3A0xb4aff81f5c83b76b!2sDot%20Baires%20Shopping!5e0!3m2!1ses!2sar!4v1654647587441!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
-  <footer class="pie">
-    <ul>
-      <li class="redes"><a href="http://www.facebook.com/GonzalitoFF" target="_blank"><img src="../Imagenes/facebook.png" alt="facebook" class="social-media"></a></li>
-      <li class="redes"><a href="http://www.instagram.com/gonzalitoff.oficial/" target="_blank"><img src="../Imagenes/instagram.jpg" alt="instagram" class="social-media"></a></li>
-      <li class="redes"><a href="http://www.twitter.com/GonzalitoFF" target="_blank"><img src="../Imagenes/twitter.png" alt="twitter" class="social-media"></a></li>
-      <li class="redes"><a href="http://www.tiktok.com/GonzalitoFF" target="_blank"><img src="../Imagenes/tiktok.png" alt="tiktok" class="social-media"></a></li>
-      <li class="redes"><a href="https://discord.gg/RNDy2tpW" target="_blank"><img src="../Imagenes/discord.png" alt="discord" class="social-media"></a></li>
-      <li class="redes"><a href="http://www.youtube.com/GonzalitoFF" target="_blank"><img src="../Imagenes/youtube.jpg" alt="youtube" class="social-media"></a></li>
-    </ul>
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4">
+      <section class="mb-4">
+        <a class="btn btn-outline-light btn-floating m-1" href="http://www.facebook.com/GonzalitoFF" role="button">
+          <img src="../Imagenes/facebook.png" alt="facebook" class="social-media">
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="http://www.twitter.com/GonzalitoFF" role="button">
+          <img src="../Imagenes/twitter.png" alt="twitter" class="social-media">
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="https://discord.gg/RNDy2tpW" role="button">
+          <img src="../Imagenes/discord.png" alt="discord" class="social-media">
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="http://www.instagram.com/gonzalitoff.oficial/" role="button">
+          <img src="../Imagenes/instagram.jpg" alt="instagram" class="social-media">
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="http://www.tiktok.com/GonzalitoFF" role="button">
+          <img src="../Imagenes/tiktok.png" alt="tiktok" class="social-media">
+        </a>
+        <a class="btn btn-outline-light btn-floating m-1" href="http://www.youtube.com/GonzalitoFF" role="button">
+          <img src="../Imagenes/youtube.jpg" alt="youtube" class="social-media">
+        </a>
+      </section>
+      <section class="">
+        <form action="">
+          <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Inscribite a nuestro Boletin informativo</strong>
+              </p>
+            </div>
+            <div class="col-md-5 col-12">
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Correo Electronico</label>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribirse
+              </button>
+            </div>
+        </form>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="http://www.facebook.com/GonzalitoFF">gonzalitoff.com</a>
+    </div>
   </footer>
-</body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
 </body>
 </html>
