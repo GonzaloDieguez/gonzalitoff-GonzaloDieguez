@@ -4,8 +4,9 @@
 }
 body{
     min-height: 100vh;
-    color: #105705;
-    background-color:  rgb(20, 20, 20);
+    color: #1ea808;
+    background-color:  rgb(20, 20, 20);    
+    font-family: 'Noto Sans Mono', monospace;
 }
 .logo {
     display: flex;
@@ -13,49 +14,40 @@ body{
     text-align: left;
 
 }
-a {
-    color: #105705;
 
-}
 h1{
     font-family: 'Noto Sans Mono', monospace;
-    color: #105705;
+    color: #1ea808;
 }
 .formularioTitulo{
-    color: #105705;
+    color: #1ea808;
+    background-color: grey;
     text-align: center;    
     position: sticky;
     top: 0;
 }
 
 h2 {
-    color: #105705;
+    color: #1ea808;
     font-family: 'Noto Sans Mono', monospace;
 }
 h3 {
-    color: #105705;
+    color: #1ea808;
     font-family: 'Noto Sans Mono', monospace;
 }
+.encabezado{
+    color: #1ea808;
 
-header {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(20, 20, 20);
-    position: sticky;
-    z-index: 100;
-    font-size: 25px;
+
 }
-nav {
-    display: flex;
-    align-items: flex-end;
-}
+
 .encabezado__lista{
     display: flex;
     align-items: stretch;
 
 }
 .encabezado__lista__item {
-    color: #105705;
+    color: #1ea808;
     padding: 10px 10px;
     margin: 10px;
     display: inline-block;
@@ -64,7 +56,7 @@ nav {
 
 .formulario {
     position: sticky;
-    color: #105705;
+    color: #1ea808;
     top: 0;
     width: 500px;
     margin: 0 auto;
@@ -72,7 +64,7 @@ nav {
     border-radius: 10px;
 }
 .encabezado__cc {
-    color: #105705;
+    color: #1ea808;
     top: 0;
     border-radius: 5px;
     font-weight: bold;
@@ -80,7 +72,7 @@ nav {
     display: flex;
 }
 .encabezado__cc__item {
-    color: #105705;
+    color: #1ea808;
     width: max-content;
     padding: 5px 5px;
     display: inline-block;
@@ -89,7 +81,6 @@ nav {
 }
 
 #ultimoParrafo{
-    color: #F21B3F;
     font-family: 'Noto Sans Mono', monospace;
     text-align: right;
     width: 50%;
@@ -142,6 +133,8 @@ iframe{
     justify-self: center;
     align-self: center;
     text-align: center;
+    transition: all 2s; 
+
 
 
 }
@@ -208,7 +201,7 @@ img{
     
 }
 @media screen and (max-width: 320px){
-    
+
     .contenedor__imagen{
         width: 100px;
         height: 100px;
@@ -222,8 +215,33 @@ img{
         pad: 30px;}
 }
 
-.barraNavegacion {
-    color: #105705;
 
+.grilla__item:hover {
+    transform: scale(1.50);
+}
+
+.nav-link:hover {
+    transform: scale(1.50);
+    color: #1ea808;
+    transition: all 2s;
+    
+}
+
+.encabezado__nav {
+    color: #1ea808;
+
+}
+.nav-link {
+    color: #1ea808;
+
+}
+.noticia1 {
+    display: flex;
+    flex: auto;
+
+}
+.noticia1-imagen{
+    height: 500px;
+    width: 500px;
 
 }
