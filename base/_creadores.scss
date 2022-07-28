@@ -1,0 +1,60 @@
+.encabezado__cc {
+  color: $colorprincipal;
+  top: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 10px;
+  display: flex;
+}
+
+.encabezado__cc__item {
+  color: $colorprincipal;
+  width: max-content;
+  padding: 5px 5px;
+  display: inline-block;
+  margin: 50px;
+  height: auto;
+}
+
+.grillaVideos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto-fill(2, 1fr);
+  gap: 20px 20px;
+  justify-items: center;
+
+  div {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grillaVideos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    justify-items: center;
+    pad: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grillaVideos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: repeat(auto-fill, 1fr);
+    justify-items: center;
+    pad: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .grillaVideos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: repeat(auto-fill, 1fr);
+    justify-items: center;
+    pad: 30px;
+  }
+}

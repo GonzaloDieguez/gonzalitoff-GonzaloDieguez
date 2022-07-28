@@ -1,0 +1,27 @@
+.sponsors__logo {
+  width: 70%;
+  height: 300px;
+}
+
+.sponsors__grilla {
+  border-radius: 6px;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  transition: all 2s;
+}
+
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  grid-auto-rows: minmax(80px, auto);
+  gap: 20px;
+  width: 100%;
+  grid-auto-flow: dense;
+  justify-self: center;
+  justify-items: center;
+}
+
+.sponsors__titulo {
+  justify-items: center;
+}

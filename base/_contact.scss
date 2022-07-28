@@ -1,0 +1,52 @@
+.formularioTitulo {
+  color: $colorprincipal;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+.encabezado {
+  color: $colorprincipal;
+}
+
+.encabezado__lista {
+  display: flex;
+  align-items: stretch;
+}
+
+.encabezado__lista__item {
+  color: $colorprincipal;
+  padding: 10px 10px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+.formulario {  
+  @include borderybackcolor (2px solid $colorprincipal , $fondoprincipal);
+
+  position: sticky;
+  color: $colorprincipal;
+  top: 0;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.encabezado__cc {
+  color: $colorprincipal;
+  top: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 10px;
+  display: flex;
+}
+
+.encabezado__cc__item {
+  color: $colorprincipal;
+  width: max-content;
+  padding: 5px 5px;
+  display: inline-block;
+  margin: 50px;
+  height: auto;
+}

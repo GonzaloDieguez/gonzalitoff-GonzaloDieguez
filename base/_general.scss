@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: $colorprincipal;
+  background-color: $fondoprincipal;
+  font-family: 'Noto Sans Mono', monospace;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+h1 {
+  font-family: 'Noto Sans Mono', monospace;
+  color: $colorprincipal;
+}
+
+
+h2, h3 {
+  color: $colorprincipal;
+  font-family: 'Noto Sans Mono', monospace;
+}
+.footer {
+  background-color: $fondoprincipal;
+  padding: 30px;
+  text-align: center;
+}
+
+.social-media {
+  width: 50px;
+  position: sticky;
+}
+
+.contenedor {
+  width: 70%;
+  height: 300px;
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.contenedor__imagen {
+  width: 70%;
+  height: 300px;
+}
+
+iframe {
+  width: 600px;
+  height: 300px;
+}
+img {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+  iframe {
+    width: 300px;
+    height: 150px;
+  }
+}
+.nav-link:hover {
+  transform: scale(0.75);
+  color: $colorprincipal;
+  transition: all 2s;
+}
+
+.encabezado__nav, .nav-link {
+  color: $colorprincipal;
+}
+
+.noticia1 {
+  display: map-get($flex, tipo);
+  justify-content: map-get($flex, justificado);
+}
+
+.noticia1-imagen {
+  height: 500px;
+  width: 500px;
+}
