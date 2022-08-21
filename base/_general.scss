@@ -10,6 +10,7 @@ body {
   font-family: 'Noto Sans Mono', monospace;
 }
 
+
 .logo {
   display: flex;
   justify-content: center;
@@ -78,12 +79,19 @@ img {
   color: $colorprincipal;
 }
 
-.noticia1 {
-  display: map-get($flex, tipo);
-  justify-content: map-get($flex, justificado);
+.seccionImportante{
+}
+
+
+.noticia1 { 
+  
+}
+.noticia1-cuerpo { 
+  padding: 50px;  
+  text-align: justify;
 }
 
 .noticia1-imagen {
-  height: 500px;
+  height: 400px;
   width: 500px;
 }

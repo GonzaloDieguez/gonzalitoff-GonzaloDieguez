@@ -1,9 +1,9 @@
 .esports {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  grid-template-columns: repeat(4,1fr);
   grid-auto-rows: minmax(80px, auto);
   gap: 20px;
-  justify-content: center;
+  justify-items: center;
 }
 
 .esports-imagen {
