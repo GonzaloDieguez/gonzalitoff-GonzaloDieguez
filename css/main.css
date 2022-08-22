@@ -11,7 +11,7 @@ body {
 .logo {
   display: flex;
   justify-content: center;
-  text-align: left; }
+  text-align: center; }
 
 h1 {
   font-family: 'Noto Sans Mono', monospace;
@@ -50,10 +50,26 @@ iframe {
 img {
   object-fit: contain; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   iframe {
     width: 300px;
-    height: 150px; } }
+    height: 150px; }
+  .noticia1-imagen {
+    height: 400px;
+    width: 500px; } }
+
+@media screen and (max-width: 768x) {
+  .noticia1-imagen {
+    width: 50px;
+    height: 50px; } }
+
+@media screen and (max-width: 320px) {
+  .noticia1-imagen {
+    width: 250px;
+    height: 250px; }
+  .logotipo {
+    width: 300px;
+    height: 300px; } }
 
 .nav-link:hover {
   transform: scale(0.75);
@@ -66,10 +82,6 @@ img {
 .noticia1-cuerpo {
   padding: 50px;
   text-align: justify; }
-
-.noticia1-imagen {
-  height: 400px;
-  width: 500px; }
 
 .sponsors__logo {
   width: 70%;
@@ -107,6 +119,39 @@ img {
   gap: 20px;
   width: 600px; }
 
+@media screen and (max-width: 1024px) {
+  .imagenAboutus {
+    padding: 20px;
+    justify-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    width: 600px; }
+  .equipoCompleto {
+    width: 750px;
+    padding: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .imagenAboutus {
+    padding: 20px;
+    justify-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    width: 500px; }
+  .equipoCompleto {
+    width: 500px;
+    padding: 20px; } }
+
+@media screen and (max-width: 320px) {
+  .imagenAboutus {
+    padding: 20px;
+    justify-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    width: 250px; }
+  .equipoCompleto {
+    width: 250px;
+    padding: 20px; } }
+
 iframe {
   width: 600px;
   height: 300px; }
@@ -137,12 +182,24 @@ iframe {
   border: 2px solid #1ea808;
   background-color: #141414;
   padding: 20px;
-  position: sticky;
   color: #1ea808;
   top: 0;
-  width: 500px;
+  width: 600px;
   margin: 0 auto;
   border-radius: 10px; }
+
+@media screen and (max-width: 320px) {
+  .formularioGeneral {
+    height: 750px; }
+  .formulario {
+    border: 2px solid #1ea808;
+    background-color: #141414;
+    padding: 20px;
+    color: #1ea808;
+    top: 0;
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 10px; } }
 
 .encabezado__cc {
   color: #1ea808;
@@ -171,6 +228,15 @@ iframe {
   .grillaVideos div {
     display: block; }
 
+@media screen and (max-width: 1024px) {
+  .grillaVideos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    justify-items: center;
+    pad: 30px; } }
+
 @media screen and (max-width: 768px) {
   .grillaVideos {
     display: grid;
@@ -180,32 +246,48 @@ iframe {
     justify-items: center;
     pad: 30px; } }
 
-@media screen and (max-width: 600px) {
-  .grillaVideos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: repeat(2, 1fr);
-    justify-items: center;
-    pad: 30px; } }
-
 @media screen and (max-width: 320px) {
   .grillaVideos {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
     grid-auto-rows: repeat(1, 2fr);
     justify-items: center;
-    pad: 15px; } }
-
-.esports {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(80px, auto);
-  gap: 20px;
-  justify-items: center; }
+    pad: 15px; }
+  .encabezado__cc__item {
+    color: #1ea808;
+    padding: 4px 4px;
+    display: inline-block;
+    margin: 25px;
+    justify-items: center;
+    font-size: 7px; } }
 
 .esports-imagen {
   height: 200px;
   width: 200px; }
+
+@media screen and (max-width: 1024px) {
+  .esports {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+    gap: 20px;
+    justify-items: center; } }
+
+@media screen and (max-width: 768x) {
+  .esports {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+    gap: 20px;
+    justify-items: center; } }
+
+@media screen and (max-width: 320px) {
+  .esports {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+    gap: 20px;
+    justify-items: center; } }
 
 .contenedor {
   width: 70%;

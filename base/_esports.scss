@@ -1,12 +1,33 @@
-.esports {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-auto-rows: minmax(80px, auto);
-  gap: 20px;
-  justify-items: center;
-}
+
 
 .esports-imagen {
   height: 200px;
   width: 200px;
+}
+@media screen and (max-width: 1024px) {
+  .esports {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(80px, auto);
+    gap: 20px;
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 768x) {
+  .esports {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(80px, auto);
+    gap: 20px;
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .esports {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-auto-rows: minmax(80px, auto);
+    gap: 20px;
+    justify-items: center;
+  }
 }
